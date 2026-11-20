@@ -1,0 +1,32 @@
+# Canonical machine-readable profile. Keep in sync with the README agent card.
+name: Izabayo Samuel
+handle: Samuel-Fx-1
+role: Full-Stack Developer, Cybersecurity Analyst & Forex Trader
+location: Kigali, Rwanda (UTC+2)
+status: open to junior roles, freelance work and collaborations
+
+stack:
+  frontend: [React, Next.js, Vue, Tailwind CSS]
+  backend: [Node.js, Express, REST APIs]
+  data: [MongoDB]
+  deploy: [Vercel]
+  tools: [Git, Figma]
+  security: [web app review, vulnerability assessment, hardening]
+
+selected_work:
+  - name: Samuel AI
+    url: https://samuel3d.vercel.app
+    note: OpenRouter-powered portfolio assistant
+  - name: Samuel OS
+    url: https://samuelosportfolio.vercel.app
+    note: macOS-style desktop portfolio
+  - name: PayFlow
+    url: https://github.com/Samuel-Fx-1/PayFlow-Dashboard
+    note: payment operations dashboard
+  - name: DataVision
+    url: https://github.com/Samuel-Fx-1/DataVision---Business-Intelligence-Dashboard
+    note: business intelligence dashboard
+
+contact:
+  email: samuelislegend8@gmail.com
+  github: https://github.com/Samuel-Fx-1

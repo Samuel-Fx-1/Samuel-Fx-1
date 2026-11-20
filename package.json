@@ -1,0 +1,9 @@
+{
+  "name": "samuel-profile-readme",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Profile README and generated visual assets for Izabayo Samuel",
+  "scripts": {
+    "assets": "node scripts/build-assets.mjs"
+  }
+}

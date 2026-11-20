@@ -1,0 +1,247 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="660" viewBox="0 0 1320 660" role="img">
+<defs>
+  <linearGradient id="hero-bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#05070f"/>
+    <stop offset=".5" stop-color="#090d1a"/>
+    <stop offset="1" stop-color="#05070f"/>
+  </linearGradient>
+  <radialGradient id="glow-purple" cx=".5" cy=".5" r=".5">
+    <stop offset="0" stop-color="#7c3aed" stop-opacity=".55"/>
+    <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glow-orange" cx=".5" cy=".5" r=".5">
+    <stop offset="0" stop-color="#f97316" stop-opacity=".38"/>
+    <stop offset="1" stop-color="#f97316" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glow-teal" cx=".5" cy=".5" r=".5">
+    <stop offset="0" stop-color="#06b6d4" stop-opacity=".34"/>
+    <stop offset="1" stop-color="#06b6d4" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glow-green" cx=".5" cy=".5" r=".5">
+    <stop offset="0" stop-color="#10b981" stop-opacity=".3"/>
+    <stop offset="1" stop-color="#10b981" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="pill-glass" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#ffffff" stop-opacity=".19"/>
+    <stop offset=".5" stop-color="#ffffff" stop-opacity=".09"/>
+    <stop offset="1" stop-color="#ffffff" stop-opacity=".035"/>
+  </linearGradient>
+  <linearGradient id="pill-edge" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#ffffff" stop-opacity=".7"/>
+    <stop offset=".4" stop-color="#ffffff" stop-opacity=".12"/>
+    <stop offset="1" stop-color="#a78bfa" stop-opacity=".45"/>
+  </linearGradient>
+  <linearGradient id="orb-fill" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#1e293b"/>
+    <stop offset="1" stop-color="#0b1020"/>
+  </linearGradient>
+  <linearGradient id="orb-ring" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#a78bfa"/>
+    <stop offset=".5" stop-color="#22d3ee"/>
+    <stop offset="1" stop-color="#34d399"/>
+  </linearGradient>
+  <linearGradient id="name-grad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#ffffff"/>
+    <stop offset="1" stop-color="#c7d2fe"/>
+  </linearGradient>
+  <filter id="hero-shadow" x="-40%" y="-40%" width="180%" height="190%">
+    <feDropShadow dx="0" dy="22" stdDeviation="26" flood-color="#02040a" flood-opacity=".6"/>
+  </filter>
+  <filter id="hero-blur" x="-80%" y="-80%" width="260%" height="260%">
+    <feGaussianBlur stdDeviation="30"/>
+  </filter>
+  <filter id="orb-glow" x="-80%" y="-80%" width="260%" height="260%">
+    <feGaussianBlur stdDeviation="18"/>
+  </filter>
+  <pattern id="hero-dots" width="30" height="30" patternUnits="userSpaceOnUse">
+    <circle cx="1.2" cy="1.2" r="1.1" fill="#ffffff" fill-opacity=".055"/>
+  </pattern>
+  
+  <linearGradient id="ht-sparkle-glass" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#ffffff" stop-opacity=".16"/>
+    <stop offset=".55" stop-color="#ffffff" stop-opacity=".07"/>
+    <stop offset="1" stop-color="#ffffff" stop-opacity=".03"/>
+  </linearGradient>
+  <linearGradient id="ht-sparkle-accent" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#8B5CF6"/>
+    <stop offset="1" stop-color="#D946EF"/>
+  </linearGradient>
+  <linearGradient id="ht-sparkle-edge" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#ffffff" stop-opacity=".55"/>
+    <stop offset=".45" stop-color="#ffffff" stop-opacity=".08"/>
+    <stop offset="1" stop-color="#8B5CF6" stop-opacity=".35"/>
+  </linearGradient>
+  <filter id="ht-sparkle-shadow" x="-40%" y="-40%" width="180%" height="190%">
+    <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#02040a" flood-opacity=".55"/>
+  </filter>
+  <filter id="ht-sparkle-blur" x="-80%" y="-80%" width="260%" height="260%">
+    <feGaussianBlur stdDeviation="26"/>
+  </filter>
+
+  <linearGradient id="ht-grid-glass" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#ffffff" stop-opacity=".16"/>
+    <stop offset=".55" stop-color="#ffffff" stop-opacity=".07"/>
+    <stop offset="1" stop-color="#ffffff" stop-opacity=".03"/>
+  </linearGradient>
+  <linearGradient id="ht-grid-accent" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#FB923C"/>
+    <stop offset="1" stop-color="#F43F5E"/>
+  </linearGradient>
+  <linearGradient id="ht-grid-edge" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#ffffff" stop-opacity=".55"/>
+    <stop offset=".45" stop-color="#ffffff" stop-opacity=".08"/>
+    <stop offset="1" stop-color="#FB923C" stop-opacity=".35"/>
+  </linearGradient>
+  <filter id="ht-grid-shadow" x="-40%" y="-40%" width="180%" height="190%">
+    <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#02040a" flood-opacity=".55"/>
+  </filter>
+  <filter id="ht-grid-blur" x="-80%" y="-80%" width="260%" height="260%">
+    <feGaussianBlur stdDeviation="26"/>
+  </filter>
+
+  <linearGradient id="ht-chart-glass" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#ffffff" stop-opacity=".16"/>
+    <stop offset=".55" stop-color="#ffffff" stop-opacity=".07"/>
+    <stop offset="1" stop-color="#ffffff" stop-opacity=".03"/>
+  </linearGradient>
+  <linearGradient id="ht-chart-accent" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#22D3EE"/>
+    <stop offset="1" stop-color="#0EA5E9"/>
+  </linearGradient>
+  <linearGradient id="ht-chart-edge" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#ffffff" stop-opacity=".55"/>
+    <stop offset=".45" stop-color="#ffffff" stop-opacity=".08"/>
+    <stop offset="1" stop-color="#22D3EE" stop-opacity=".35"/>
+  </linearGradient>
+  <filter id="ht-chart-shadow" x="-40%" y="-40%" width="180%" height="190%">
+    <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#02040a" flood-opacity=".55"/>
+  </filter>
+  <filter id="ht-chart-blur" x="-80%" y="-80%" width="260%" height="260%">
+    <feGaussianBlur stdDeviation="26"/>
+  </filter>
+
+  <linearGradient id="ht-window-glass" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#ffffff" stop-opacity=".16"/>
+    <stop offset=".55" stop-color="#ffffff" stop-opacity=".07"/>
+    <stop offset="1" stop-color="#ffffff" stop-opacity=".03"/>
+  </linearGradient>
+  <linearGradient id="ht-window-accent" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#34D399"/>
+    <stop offset="1" stop-color="#10B981"/>
+  </linearGradient>
+  <linearGradient id="ht-window-edge" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#ffffff" stop-opacity=".55"/>
+    <stop offset=".45" stop-color="#ffffff" stop-opacity=".08"/>
+    <stop offset="1" stop-color="#34D399" stop-opacity=".35"/>
+  </linearGradient>
+  <filter id="ht-window-shadow" x="-40%" y="-40%" width="180%" height="190%">
+    <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#02040a" flood-opacity=".55"/>
+  </filter>
+  <filter id="ht-window-blur" x="-80%" y="-80%" width="260%" height="260%">
+    <feGaussianBlur stdDeviation="26"/>
+  </filter></defs>
+
+  <rect width="1320" height="660" fill="url(#hero-bg)"/>
+  <rect width="1320" height="660" fill="url(#hero-dots)"/>
+  <ellipse cx="170" cy="90" rx="560" ry="420" fill="url(#glow-purple)"/>
+  <ellipse cx="1180" cy="80" rx="500" ry="400" fill="url(#glow-orange)"/>
+  <ellipse cx="150" cy="620" rx="520" ry="400" fill="url(#glow-teal)"/>
+  <ellipse cx="1190" cy="620" rx="500" ry="400" fill="url(#glow-green)"/>
+
+  <g opacity=".42" fill="none" stroke-width="2">
+    <path d="M356 300 C 300 330, 290 350, 250 360" stroke="#a78bfa"/>
+    <path d="M964 300 C 1020 330, 1030 350, 1070 360" stroke="#fb923c"/>
+    <path d="M356 370 C 300 390, 290 420, 250 440" stroke="#22d3ee"/>
+    <path d="M964 370 C 1020 390, 1030 420, 1070 440" stroke="#34d399"/>
+  </g>
+
+  
+  <g transform="rotate(-3 204 140)">
+    <rect x="32" y="54" width="344" height="206" rx="40" fill="#8B5CF6" opacity=".2" filter="url(#hero-blur)"/>
+    <g filter="url(#hero-shadow)">
+      <rect x="44" y="46" width="320" height="188" rx="34" fill="url(#ht-sparkle-glass)" stroke="url(#ht-sparkle-edge)" stroke-width="1.6"/>
+      <rect x="45.5" y="47.5" width="317" height="185" rx="32.5" fill="none" stroke="#ffffff" stroke-opacity=".08"/>
+      <rect x="70" y="72" width="66" height="66" rx="20" fill="url(#ht-sparkle-accent)"/>
+      <rect x="70" y="72" width="66" height="66" rx="20" fill="none" stroke="#ffffff" stroke-opacity=".35"/>
+      <g transform="translate(87 89) scale(1.3333333333333333)">
+    <path d="M12 2.2l2.35 6.45L21 11l-6.65 2.35L12 19.8l-2.35-6.45L3 11l6.65-2.35L12 2.2z" fill="#fff"/>
+    <path d="M19 15.5l.95 2.55L22.5 19l-2.55.95L19 22.5l-.95-2.55L15.5 19l2.55-.95L19 15.5z" fill="#fff" opacity=".72"/></g>
+      <rect x="70" y="48" width="268" height="1.5" rx=".75" fill="#ffffff" fill-opacity=".3"/>
+      <text x="72" y="184" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="700" fill="#ffffff">Samuel AI</text>
+      <text x="72" y="212" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="600" letter-spacing="2.4" fill="#dfe6f5" fill-opacity=".72">PORTFOLIO ASSISTANT</text>
+    </g>
+  </g>
+
+  <g transform="rotate(3 1116 140)">
+    <rect x="944" y="54" width="344" height="206" rx="40" fill="#FB923C" opacity=".2" filter="url(#hero-blur)"/>
+    <g filter="url(#hero-shadow)">
+      <rect x="956" y="46" width="320" height="188" rx="34" fill="url(#ht-grid-glass)" stroke="url(#ht-grid-edge)" stroke-width="1.6"/>
+      <rect x="957.5" y="47.5" width="317" height="185" rx="32.5" fill="none" stroke="#ffffff" stroke-opacity=".08"/>
+      <rect x="982" y="72" width="66" height="66" rx="20" fill="url(#ht-grid-accent)"/>
+      <rect x="982" y="72" width="66" height="66" rx="20" fill="none" stroke="#ffffff" stroke-opacity=".35"/>
+      <g transform="translate(999 89) scale(1.3333333333333333)">
+    <rect x="3" y="3" width="7.2" height="7.2" rx="2.1" fill="#fff"/>
+    <rect x="13.8" y="3" width="7.2" height="7.2" rx="2.1" fill="#fff" opacity=".82"/>
+    <rect x="3" y="13.8" width="7.2" height="7.2" rx="2.1" fill="#fff" opacity=".82"/>
+    <rect x="13.8" y="13.8" width="7.2" height="7.2" rx="2.1" fill="#fff" opacity=".58"/></g>
+      <rect x="982" y="48" width="268" height="1.5" rx=".75" fill="#ffffff" fill-opacity=".3"/>
+      <text x="984" y="184" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="700" fill="#ffffff">PayFlow</text>
+      <text x="984" y="212" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="600" letter-spacing="2.4" fill="#dfe6f5" fill-opacity=".72">PAYMENT DASHBOARD</text>
+    </g>
+  </g>
+
+  <g transform="rotate(3 204 520)">
+    <rect x="32" y="434" width="344" height="206" rx="40" fill="#22D3EE" opacity=".2" filter="url(#hero-blur)"/>
+    <g filter="url(#hero-shadow)">
+      <rect x="44" y="426" width="320" height="188" rx="34" fill="url(#ht-chart-glass)" stroke="url(#ht-chart-edge)" stroke-width="1.6"/>
+      <rect x="45.5" y="427.5" width="317" height="185" rx="32.5" fill="none" stroke="#ffffff" stroke-opacity=".08"/>
+      <rect x="70" y="452" width="66" height="66" rx="20" fill="url(#ht-chart-accent)"/>
+      <rect x="70" y="452" width="66" height="66" rx="20" fill="none" stroke="#ffffff" stroke-opacity=".35"/>
+      <g transform="translate(87 469) scale(1.3333333333333333)">
+    <rect x="3.4" y="13.2" width="4.4" height="7.4" rx="1.6" fill="#fff" opacity=".72"/>
+    <rect x="9.8" y="9" width="4.4" height="11.6" rx="1.6" fill="#fff"/>
+    <rect x="16.2" y="4.4" width="4.4" height="16.2" rx="1.6" fill="#fff" opacity=".86"/>
+    <path d="M4.6 10.2l5-3.4 4.2 2.1 5.4-4.4" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity=".55"/></g>
+      <rect x="70" y="428" width="268" height="1.5" rx=".75" fill="#ffffff" fill-opacity=".3"/>
+      <text x="72" y="564" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="700" fill="#ffffff">DataVision</text>
+      <text x="72" y="592" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="600" letter-spacing="2.4" fill="#dfe6f5" fill-opacity=".72">BI DASHBOARD</text>
+    </g>
+  </g>
+
+  <g transform="rotate(-3 1116 520)">
+    <rect x="944" y="434" width="344" height="206" rx="40" fill="#34D399" opacity=".2" filter="url(#hero-blur)"/>
+    <g filter="url(#hero-shadow)">
+      <rect x="956" y="426" width="320" height="188" rx="34" fill="url(#ht-window-glass)" stroke="url(#ht-window-edge)" stroke-width="1.6"/>
+      <rect x="957.5" y="427.5" width="317" height="185" rx="32.5" fill="none" stroke="#ffffff" stroke-opacity=".08"/>
+      <rect x="982" y="452" width="66" height="66" rx="20" fill="url(#ht-window-accent)"/>
+      <rect x="982" y="452" width="66" height="66" rx="20" fill="none" stroke="#ffffff" stroke-opacity=".35"/>
+      <g transform="translate(999 469) scale(1.3333333333333333)">
+    <rect x="2.6" y="3.6" width="18.8" height="16.8" rx="3.4" fill="none" stroke="#fff" stroke-width="1.7"/>
+    <path d="M2.6 9.2h18.8" stroke="#fff" stroke-width="1.7"/>
+    <circle cx="6.4" cy="6.4" r="1.05" fill="#fff"/>
+    <circle cx="9.7" cy="6.4" r="1.05" fill="#fff" opacity=".7"/>
+    <path d="M6 13h5.2M6 16.4h8.4" stroke="#fff" stroke-width="1.5" stroke-linecap="round" opacity=".65"/></g>
+      <rect x="982" y="428" width="268" height="1.5" rx=".75" fill="#ffffff" fill-opacity=".3"/>
+      <text x="984" y="564" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="700" fill="#ffffff">Samuel OS</text>
+      <text x="984" y="592" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="600" letter-spacing="2.4" fill="#dfe6f5" fill-opacity=".72">DESKTOP PORTFOLIO</text>
+    </g>
+  </g>
+
+  <g filter="url(#hero-shadow)">
+    <rect x="300" y="190" width="720" height="280" rx="82" fill="url(#pill-glass)" stroke="url(#pill-edge)" stroke-width="1.8"/>
+    <rect x="302" y="192" width="716" height="276" rx="80" fill="none" stroke="#ffffff" stroke-opacity=".08"/>
+  </g>
+
+  <circle cx="415" cy="330" r="104" fill="#22d3ee" opacity=".22" filter="url(#orb-glow)"/>
+  <circle cx="415" cy="330" r="100" fill="url(#orb-fill)" stroke="url(#orb-ring)" stroke-width="5"/>
+  <circle cx="415" cy="330" r="88" fill="none" stroke="#ffffff" stroke-opacity=".12"/>
+  <text x="425" y="356" text-anchor="middle" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="68" font-weight="700" fill="#ffffff">IS</text>
+
+  <text x="550" y="300" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="54" font-weight="700" fill="url(#name-grad)">Samuel Izabayo</text>
+  <text x="552" y="342" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="500" fill="#a9b6d0">@Samuel-Fx-1</text>
+  <text x="552" y="378" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="17.5" font-weight="600" letter-spacing=".2" fill="#dfe6f5" fill-opacity=".9">Full-Stack Developer &amp; Cybersecurity Analyst</text>
+  <text x="552" y="404" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="500" fill="#a9b6d0">Forex Trader · Kigali, Rwanda (UTC+2)</text>
+  <circle cx="558" cy="432" r="4" fill="#34d399"/>
+  <text x="572" y="437" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="1.4" fill="#8e9bb5">OPEN TO WORK</text>
+  
+</svg>

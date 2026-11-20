@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="72" viewBox="0 0 1320 72" role="img">
+<defs>
+  <linearGradient id="sec-line" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#a78bfa" stop-opacity=".9"/>
+    <stop offset=".45" stop-color="#22d3ee" stop-opacity=".5"/>
+    <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+  </linearGradient></defs>
+
+  <rect x="1" y="1" width="1318" height="70" rx="18" fill="#0a0e18" stroke="#1b2436" stroke-width="1.2"/>
+  <rect x="1" y="1" width="1318" height="70" rx="18" fill="none" stroke="#ffffff" stroke-opacity=".035"/>
+  <rect x="22" y="17" width="4" height="38" rx="2" fill="url(#sec-line)"/>
+  <text x="40" y="45" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="27" font-weight="700" fill="#ffffff">Selected work</text>
+  <text x="1296" y="44" text-anchor="end" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="500" fill="#7c8aa5">Live products and open-source builds</text>
+  <rect x="40" y="60" width="1240" height="1.5" rx=".75" fill="url(#sec-line)" opacity=".55"/>
+</svg>
