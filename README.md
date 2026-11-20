@@ -23,15 +23,9 @@ A desktop-and-mobile portfolio with a window manager, sandboxed terminal, AI ass
 
 **Stack:** React, Vite, Node.js serverless functions, MongoDB, Vercel  
 **Live:** <https://samuelosportfolio.vercel.app>
+control.
 
-### PayFlow — payment processing dashboard
-
-A demo payment operations dashboard with transactions, payouts, API key management, analytics, webhooks, and role-based access control.
-
-**Stack:** Next.js 14, TypeScript, Tailwind CSS, Chart.js, JWT, Jest  
-**Repository:** <https://github.com/Samuel-Fx-1/PayFlow-Dashboard>
-
-### DataVision — business intelligence dashboard
+iness intelligence dashboard
 
 A responsive BI dashboard rebuilt from a static site into a Next.js App Router application with server-side data and interactive charts.
 
