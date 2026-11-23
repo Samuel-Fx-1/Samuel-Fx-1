@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 540" width="720" height="540">
+  <style>
+    :root {
+      --bg: #0A0A14; --card: #16162E; --text: #E8E8FF; --muted: #9C9CBE;
+      --orange: #FF8C00; --cyan: #16E6EE; --green: #34D399; --border: rgba(255,255,255,0.12);
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #F4F4FA; --card: #FFFFFF; --text: #0A0A14; --muted: #5A5A7A;
+        --orange: #E07A00; --cyan: #0099A8; --green: #10B981; --border: rgba(0,0,0,0.08);
+      }
+    }
+    .ui { font-family: system-ui, "Segoe UI", Arial, sans-serif; }
+    .mono { font-family: ui-monospace, "Consolas", "Menlo", monospace; }
+    @keyframes grow1 { from { height: 0; } to { height: 90px; } }
+    @keyframes grow2 { from { height: 0; } to { height: 140px; } }
+    @keyframes grow3 { from { height: 0; } to { height: 110px; } }
+    @keyframes grow4 { from { height: 0; } to { height: 170px; } }
+    @keyframes count { from { opacity: 0; } to { opacity: 1; } }
+    .b1 { animation: grow1 1.2s ease-out 0.3s both; }
+    .b2 { animation: grow2 1.2s ease-out 0.5s both; }
+    .b3 { animation: grow3 1.2s ease-out 0.7s both; }
+    .b4 { animation: grow4 1.2s ease-out 0.9s both; }
+    .num { animation: count 0.6s ease-out 1.6s both; }
+  </style>
+
+  <rect width="720" height="540" fill="var(--bg)"/>
+  <!-- dashboard card -->
+  <rect x="90" y="70" width="540" height="400" rx="18" fill="var(--card)" stroke="var(--border)" stroke-width="1"/>
+  <text x="120" y="108" class="ui" font-size="15" font-weight="600" fill="var(--text)">PayFlow · Revenue</text>
+  <text x="580" y="108" text-anchor="end" class="ui" font-size="11" fill="var(--muted)">last 7 days</text>
+
+  <!-- KPI number -->
+  <text class="num" x="120" y="170" class="mono" font-size="30" font-weight="700" fill="var(--orange)">$48,290</text>
+  <text x="120" y="190" class="ui" font-size="11" fill="var(--muted)">+12.4% vs last week</text>
+
+  <!-- bar chart -->
+  <g transform="translate(120,360)">
+    <!-- baseline -->
+    <line x1="0" y1="0" x2="480" y2="0" stroke="var(--border)" stroke-width="1"/>
+    <!-- bars -->
+    <rect class="b1" x="20" y="-90" width="48" height="0" fill="var(--cyan)" rx="6"/>
+    <rect class="b2" x="110" y="-140" width="48" height="0" fill="var(--cyan)" rx="6"/>
+    <rect class="b3" x="200" y="-110" width="48" height="0" fill="var(--cyan)" rx="6"/>
+    <rect class="b4" x="290" y="-170" width="48" height="0" fill="var(--orange)" rx="6"/>
+    <rect class="b2" x="380" y="-130" width="48" height="0" fill="var(--cyan)" rx="6"/>
+    <!-- labels -->
+    <text x="44" y="20" text-anchor="middle" class="ui" font-size="10" fill="var(--muted)">Mon</text>
+    <text x="134" y="20" text-anchor="middle" class="ui" font-size="10" fill="var(--muted)">Tue</text>
+    <text x="224" y="20" text-anchor="middle" class="ui" font-size="10" fill="var(--muted)">Wed</text>
+    <text x="314" y="20" text-anchor="middle" class="ui" font-size="10" fill="var(--muted)">Thu</text>
+    <text x="404" y="20" text-anchor="middle" class="ui" font-size="10" fill="var(--muted)">Fri</text>
+  </g>
+
+  <text x="360" y="510" text-anchor="middle" class="ui" font-size="14" fill="var(--muted)">PayFlow · metrics dashboard</text>
+</svg>

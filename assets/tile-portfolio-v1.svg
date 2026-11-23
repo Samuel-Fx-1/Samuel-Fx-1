@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 540" width="720" height="540">
+  <style>
+    :root {
+      --bg: #0A0A14; --card: #16162E; --text: #E8E8FF; --muted: #9C9CBE;
+      --accent: #FF8C00; --cyan: #16E6EE; --border: rgba(255,255,255,0.12);
+      --bubble: rgba(255,255,255,0.08);
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #F4F4FA; --card: #FFFFFF; --text: #0A0A14; --muted: #5A5A7A;
+        --accent: #E07A00; --cyan: #0099A8; --border: rgba(0,0,0,0.08);
+        --bubble: rgba(0,0,0,0.05);
+      }
+    }
+    .ui { font-family: system-ui, "Segoe UI", Arial, sans-serif; }
+    .mono { font-family: ui-monospace, "Consolas", "Menlo", monospace; }
+    @keyframes fadein { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes stream { 0% { width: 0; } 100% { width: 360px; } }
+    @keyframes blink { 0%,50% { opacity: 1; } 51%,100% { opacity: 0; } }
+    .q { animation: fadein 0.5s ease-out 0.2s both; }
+    .a { animation: fadein 0.5s ease-out 1.0s both; }
+    .cursor { animation: blink 1s steps(1) infinite; }
+    .streamrect { animation: stream 2.4s steps(40) 1.4s forwards; width: 0; }
+  </style>
+
+  <rect width="720" height="540" fill="var(--bg)"/>
+  <!-- chat window -->
+  <rect x="90" y="70" width="540" height="400" rx="18" fill="var(--card)" stroke="var(--border)" stroke-width="1"/>
+  <text x="120" y="108" class="ui" font-size="15" font-weight="600" fill="var(--text)">Ask AI</text>
+  <circle cx="600" cy="100" r="6" fill="#28C840"/>
+
+  <!-- user question bubble -->
+  <g class="q">
+    <rect x="300" y="140" width="300" height="46" rx="14" fill="var(--accent)" opacity="0.9"/>
+    <text x="320" y="168" class="ui" font-size="13" fill="#fff">What's your stack?</text>
+  </g>
+
+  <!-- assistant answer bubble -->
+  <g class="a">
+    <rect x="120" y="210" width="400" height="150" rx="14" fill="var(--bubble)" stroke="var(--border)" stroke-width="1"/>
+    <text x="140" y="240" class="ui" font-size="13" fill="var(--text)">I build with Next.js, React,</text>
+    <text x="140" y="262" class="ui" font-size="13" fill="var(--text)">Node.js and TypeScript — plus</text>
+    <text x="140" y="284" class="ui" font-size="13" fill="var(--text)">MongoDB, Tailwind and Vite.</text>
+    <rect class="streamrect" x="140" y="292" width="0" height="18" fill="var(--card)"/>
+    <text x="140" y="306" class="mono" font-size="12" fill="var(--cyan)">streaming response…</text>
+    <text x="320" y="306" class="cursor" font-size="12" fill="var(--cyan)">|</text>
+  </g>
+
+  <!-- input bar -->
+  <rect x="120" y="400" width="480" height="40" rx="12" fill="var(--bubble)" stroke="var(--border)" stroke-width="1"/>
+  <text x="140" y="425" class="ui" font-size="12" fill="var(--muted)">Ask anything…</text>
+
+  <text x="360" y="510" text-anchor="middle" class="ui" font-size="14" fill="var(--muted)">Portfolio · Ask AI chat</text>
+</svg>

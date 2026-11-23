@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 480px; height: 380px; overflow: hidden; }
+  body { font-family: "Segoe UI", system-ui, Arial, sans-serif; padding: 18px; }
+  .tile {
+    width: 100%; height: 100%; border-radius: 22px; padding: 26px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; text-align: center;
+    border: 1px solid var(--border); backdrop-filter: blur(18px);
+  }
+  .dark .tile { background: rgba(255,255,255,0.06); --border: rgba(255,255,255,0.14); color: #E8E8FF; }
+  .light .tile { background: rgba(255,255,255,0.8); --border: rgba(0,0,0,0.08); color: #0A0A14; }
+  .logo { width: 72px; height: 72px; display: flex; align-items: center; justify-content: center; }
+  .logo img { width: 64px; height: 64px; }
+  .light .logo img { filter: invert(1); }
+  .name { font-size: 18px; font-weight: 700; }
+  .desc { font-size: 12px; opacity: 0.75; line-height: 1.4; max-width: 90%; }
+  .accent { width: 40px; height: 4px; border-radius: 2px; margin-top: 4px; }
+</style>
+</head>
+<body class="dark">
+  <div class="tile">
+    <div class="logo"><img id="logo" src="" alt=""></div>
+    <div class="name" id="name">Next.js</div>
+    <div class="desc" id="desc">App Router, SSR/SSG, API routes</div>
+    <div class="accent" id="accent"></div>
+  </div>
+<script>
+  const q = new URLSearchParams(location.search);
+  document.body.className = q.get('theme') || 'dark';
+  const slug = q.get('slug') || 'nextdotjs';
+  document.getElementById('logo').src = '../logos/' + slug + '.svg';
+  document.getElementById('logo').alt = q.get('name') || '';
+  document.getElementById('name').textContent = q.get('name') || '';
+  document.getElementById('desc').textContent = q.get('desc') || '';
+  document.getElementById('accent').style.background = q.get('grad') || 'linear-gradient(135deg,#FF8C00,#4D4DFF)';
+</script>
+</body>
+</html>

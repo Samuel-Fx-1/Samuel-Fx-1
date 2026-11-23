@@ -1,0 +1,17 @@
+# dependencies
+node_modules/
+design/node_modules/
+
+# scratch/reference projects (not part of profile repo)
+scratch/
+
+# generated previews / QA artifacts
+preview-*.html
+qa/
+design/preview-*.png
+design/*.png
+design/test.png
+
+# OS files
+.DS_Store
+Thumbs.db

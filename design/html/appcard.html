@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 480px; height: 300px; overflow: hidden; }
+  body {
+    font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+    padding: 18px;
+    display: flex; align-items: stretch;
+  }
+  .card {
+    width: 100%; height: 100%; border-radius: 22px; padding: 22px;
+    display: flex; flex-direction: column; gap: 12px;
+    border: 1px solid var(--border);
+    backdrop-filter: blur(18px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+  }
+  .dark .card { background: rgba(255,255,255,0.07); --border: rgba(255,255,255,0.16); color: #E8E8FF; }
+  .light .card { background: rgba(255,255,255,0.75); --border: rgba(0,0,0,0.08); color: #0A0A14; box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
+  .top { display: flex; align-items: center; gap: 14px; }
+  .icon { width: 58px; height: 58px; border-radius: 16px; display: flex; align-items: center; justify-content: center;
+    font-size: 24px; font-weight: 700; color: #fff; flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25); }
+  .name { font-size: 18px; font-weight: 700; line-height: 1.2; }
+  .desc { font-size: 13px; opacity: 0.85; line-height: 1.4; }
+  .url { font-family: ui-monospace, Consolas, Menlo, monospace; font-size: 11px; opacity: 0.7; margin-top: auto;
+    padding: 6px 10px; border-radius: 8px; background: rgba(0,0,0,0.12); display: inline-block; align-self: flex-start; }
+  .light .url { background: rgba(0,0,0,0.06); }
+</style>
+</head>
+<body class="dark" id="root">
+  <div class="card">
+    <div class="top">
+      <div class="icon" id="icon">P</div>
+      <div class="name" id="name">Portfolio</div>
+    </div>
+    <div class="desc" id="desc">Full-stack work</div>
+    <div class="url" id="url">samuelportfolio-seven.vercel.app</div>
+  </div>
+<script>
+  const q = new URLSearchParams(location.search);
+  const theme = q.get('theme') || 'dark';
+  document.body.className = theme;
+  document.getElementById('icon').textContent = q.get('letter') || 'P';
+  document.getElementById('icon').style.background = q.get('grad') || 'linear-gradient(135deg,#9B59FF,#4D4DFF)';
+  document.getElementById('name').textContent = q.get('name') || 'Portfolio';
+  document.getElementById('desc').textContent = q.get('desc') || '';
+  document.getElementById('url').textContent = q.get('url') || '';
+</script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 800px; height: 400px; overflow: hidden; }
+  body {
+    font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+    background: #F4F4FA;
+    color: #0A0A14;
+    position: relative;
+  }
+  .glow { position: absolute; border-radius: 50%; filter: blur(60px); opacity: 0.35; }
+  .g1 { width: 320px; height: 320px; background: #FFB800; top: -80px; left: -60px; }
+  .g2 { width: 280px; height: 280px; background: #16E6EE; bottom: -90px; right: -40px; }
+  .g3 { width: 260px; height: 260px; background: #4D4DFF; top: 40px; right: 120px; opacity: 0.3; }
+  .g4 { width: 240px; height: 240px; background: #9B59FF; bottom: 20px; left: 140px; opacity: 0.3; }
+  .bubble { position: absolute; border-radius: 50%; background: rgba(0,0,0,0.04); border: 1px solid rgba(0,0,0,0.08); backdrop-filter: blur(8px); }
+  .b1 { width: 60px; height: 60px; top: 30px; left: 340px; }
+  .b2 { width: 36px; height: 36px; top: 90px; left: 60px; }
+  .b3 { width: 44px; height: 44px; bottom: 40px; right: 80px; }
+  .b4 { width: 28px; height: 28px; bottom: 70px; left: 200px; }
+  .card {
+    position: absolute; width: 150px; padding: 10px 12px; border-radius: 16px;
+    background: rgba(255,255,255,0.7); border: 1px solid rgba(0,0,0,0.08);
+    backdrop-filter: blur(16px); display: flex; align-items: center; gap: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  }
+  .card .icon { width: 34px; height: 34px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 15px; color: #fff; flex-shrink: 0; }
+  .card .t { font-size: 12px; font-weight: 600; line-height: 1.2; color: #0A0A14; }
+  .card .s { font-size: 10px; color: #5A5A7A; line-height: 1.2; margin-top: 2px; }
+  .c1 { top: 40px; left: 40px; transform: rotate(-6deg); }
+  .c1 .icon { background: linear-gradient(135deg, #9B59FF, #4D4DFF); }
+  .c2 { top: 30px; right: 40px; transform: rotate(5deg); }
+  .c2 .icon { background: linear-gradient(135deg, #0099A8, #16E6EE); }
+  .c3 { bottom: 40px; left: 50px; transform: rotate(4deg); }
+  .c3 .icon { background: linear-gradient(135deg, #E07A00, #FFB800); }
+  .c4 { bottom: 30px; right: 50px; transform: rotate(-5deg); }
+  .c4 .icon { background: linear-gradient(135deg, #34D399, #10B981); }
+  .center-pill {
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: 300px; padding: 18px 22px; border-radius: 24px;
+    background: rgba(255,255,255,0.75); border: 1px solid rgba(0,0,0,0.08);
+    backdrop-filter: blur(24px); text-align: center;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+  }
+  .avatar { width: 64px; height: 64px; border-radius: 50%; margin: 0 auto 10px;
+    background: linear-gradient(135deg, #E07A00, #3A3ACC);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px; font-weight: 700; color: #fff; border: 2px solid rgba(0,0,0,0.1); }
+  .name { font-size: 18px; font-weight: 700; color: #0A0A14; }
+  .handle { font-size: 12px; color: #5A5A7A; margin-top: 2px; }
+  .sub { font-size: 11px; color: #0A0A14; margin-top: 6px; opacity: 0.8; }
+  .tail { position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%);
+    width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent;
+    border-top: 12px solid rgba(255,255,255,0.75); }
+</style>
+</head>
+<body>
+  <div class="glow g1"></div>
+  <div class="glow g2"></div>
+  <div class="glow g3"></div>
+  <div class="glow g4"></div>
+  <div class="bubble b1"></div>
+  <div class="bubble b2"></div>
+  <div class="bubble b3"></div>
+  <div class="bubble b4"></div>
+
+  <div class="card c1">
+    <div class="icon">P</div>
+    <div><div class="t">Portfolio</div><div class="s">Full-stack work</div></div>
+  </div>
+  <div class="card c2">
+    <div class="icon">O</div>
+    <div><div class="t">Samuel OS</div><div class="s">macOS portfolio</div></div>
+  </div>
+  <div class="card c3">
+    <div class="icon">$</div>
+    <div><div class="t">PayFlow</div><div class="s">Payments dashboard</div></div>
+  </div>
+  <div class="card c4">
+    <div class="icon">E</div>
+    <div><div class="t">Edge</div><div class="s">Trading journal</div></div>
+  </div>
+
+  <div class="center-pill">
+    <div class="avatar">IS</div>
+    <div class="name">Izabayo Samuel</div>
+    <div class="handle">@Samuel-Fx-1</div>
+    <div class="sub">Full-stack developer &amp; Cybersecurity analyst</div>
+    <div class="tail"></div>
+  </div>
+</body>
+</html>

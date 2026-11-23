@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 540" width="720" height="540">
+  <style>
+    :root {
+      --bg: #0A0A14; --card: #16162E; --text: #E8E8FF; --muted: #9C9CBE;
+      --accent: #16E6EE; --orange: #FF8C00; --border: rgba(255,255,255,0.12);
+      --titlebar: #1F1F3A;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #F4F4FA; --card: #FFFFFF; --text: #0A0A14; --muted: #5A5A7A;
+        --accent: #0099A8; --orange: #E07A00; --border: rgba(0,0,0,0.08);
+        --titlebar: #E8E8F4;
+      }
+    }
+    .font { font-family: ui-monospace, "Consolas", "Menlo", monospace; }
+    .ui { font-family: system-ui, "Segoe UI", Arial, sans-serif; }
+    @keyframes drag { 0%,100% { transform: translate(0,0) rotate(0deg); } 50% { transform: translate(14px,-10px) rotate(1.5deg); } }
+    @keyframes blink { 0%,50% { opacity: 1; } 51%,100% { opacity: 0; } }
+    @keyframes reveal1 { 0% { width: 260px; } 100% { width: 0; } }
+    @keyframes reveal2 { 0% { width: 300px; } 100% { width: 0; } }
+    @keyframes reveal3 { 0% { width: 260px; } 100% { width: 0; } }
+    @keyframes reveal4 { 0% { width: 320px; } 100% { width: 0; } }
+    .win { animation: drag 6s ease-in-out infinite; transform-origin: center; }
+    .cursor { animation: blink 1s steps(1) infinite; }
+    .r1 { animation: reveal1 1.2s steps(18) 0.4s forwards; }
+    .r2 { animation: reveal2 1.4s steps(20) 1.9s forwards; }
+    .r3 { animation: reveal3 1.2s steps(18) 3.6s forwards; }
+    .r4 { animation: reveal4 1.6s steps(22) 5.1s forwards; }
+  </style>
+
+  <rect width="720" height="540" fill="var(--bg)"/>
+  <!-- window -->
+  <g class="win">
+    <rect x="90" y="80" width="540" height="380" rx="16" fill="var(--card)" stroke="var(--border)" stroke-width="1"/>
+    <!-- title bar -->
+    <rect x="90" y="80" width="540" height="40" rx="16" fill="var(--titlebar)"/>
+    <rect x="90" y="104" width="540" height="16" fill="var(--titlebar)"/>
+    <circle cx="118" cy="100" r="7" fill="#FF5F57"/>
+    <circle cx="142" cy="100" r="7" fill="#FEBC2E"/>
+    <circle cx="166" cy="100" r="7" fill="#28C840"/>
+    <text x="360" y="106" text-anchor="middle" class="ui" font-size="13" fill="var(--muted)">Terminal — samuelos</text>
+    <!-- terminal content -->
+    <g class="font" font-size="15" fill="var(--text)">
+      <!-- line 1: whoami -->
+      <text x="118" y="160">$ whoami</text>
+      <rect class="r1" x="118" y="145" width="0" height="22" fill="var(--card)"/>
+      <text x="118" y="192" fill="var(--accent)">izabayo-samuel</text>
+      <rect class="r2" x="118" y="177" width="0" height="22" fill="var(--card)"/>
+      <!-- line 2: skills -->
+      <text x="118" y="236">$ skills</text>
+      <rect class="r3" x="118" y="221" width="0" height="22" fill="var(--card)"/>
+      <text x="118" y="268" fill="var(--muted)">React · Node.js · TypeScript · Next.js</text>
+      <rect class="r4" x="118" y="253" width="0" height="22" fill="var(--card)"/>
+      <!-- cursor -->
+      <text x="118" y="312" class="cursor" fill="var(--orange)">❯</text>
+    </g>
+  </g>
+  <!-- caption -->
+  <text x="360" y="500" text-anchor="middle" class="ui" font-size="14" fill="var(--muted)">Samuel OS · macOS window + terminal</text>
+</svg>
