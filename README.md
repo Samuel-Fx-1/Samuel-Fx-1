@@ -10,11 +10,8 @@
 <a href="https://github.com/Samuel-Fx-1/DataVision---Business-Intelligence-Dashboard"><img src="assets/dist/tile-datavision.svg" width="24%" alt="DataVision — a business intelligence dashboard"></a>
 
 <sub><a href="https://https://samuelportfolio-seven.vercel.app/"><code>https://samuelportfolio-seven.vercel.app/</code></a> · <a href="https://samuelosportfolio.vercel.app"><code>samuelosportfolio.vercel.app</code></a> · 
-
 <br>
-
 <img src="assets/dist/section-toolbox.svg" width="100%" alt="Toolbox">
-
 <img src="assets/dist/capabilities.svg" width="100%" alt="React and Next.js, Vue and Tailwind CSS, Node.js and Express APIs, Python scripting, and security review and hardening.">
 
 <br>
